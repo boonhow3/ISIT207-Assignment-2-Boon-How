@@ -20,5 +20,6 @@ window.onload = function () {
 
 function logout() {
     sessionStorage.clear(); //clears all session data
+    alert("Logout Successful!");
     window.location.href = "index.html"; //goes back to home screen
 }
