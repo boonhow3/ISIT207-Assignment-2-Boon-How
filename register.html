@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="register.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="media/Azoom.png" alt="Azoom Car Rentals"></a>
+            <a href="index.html" class="button-header">Home</a>
+            <a href="cars.html" class="button-header">View our cars</a>
+            <a href="howtorent.html" class="button-header">How to rent</a>
+            <div id="loginbuttons">
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registeraccount">
+            <table border="1" align="center"
+                style="max-width: 800px; width: 100%; table-layout: fixed; border: 1px solid black;">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:75%">
+                </colgroup>
+                <th colspan="2">
+                    <h2>Create your Azoom Account today!</h2>
+                </th>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input type="text" id="name" name="name">
+                        <br><span id="nameError" style="color:red; font-size:0.9em;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="text" id="email" name="email">
+                        <br><span id="emailError" style="color:red; font-size:0.9em;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="license">License Number:</label></td>
+                    <td><input type="text" id="license" name="license">
+                        <br><span id="licenseError" style="color:red; font-size:0.9em;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="text" id="phone" name="phone">
+                        <br><span id="phoneError" style="color:red; font-size:0.9em;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Password:</label></td>
+                    <td>
+                        <input type="password" id="password">
+                        <br><span id="passwordError" style="color:red;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Confirm Password:</label></td>
+                    <td>
+                        <input type="password" id="confirmPassword">
+                        <br><span id="confirmError" style="color:red;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Create Account</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Already have an account? <a href="login.html">Login here!</a></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerflex">
+            <div class="contactus">
+                <h3>Contact Us</h3>
+                <p>Email: contact_us@azoom.com</p>
+                <p>Mobile No.: +65 1234 5678</p>
+                <p>Address: 20 Jln Kilang, #02-00, Singapore 159418</p>
+                <p>Operating Hours: 9am - 7pm</p>
+            </div>
+            <div class="social">
+                <h3>Follow us:</h3>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="footerIcons" src="media/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="footerIcons" src="media/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="footerIcons" src="media/youtube.png" alt="Youtube">
+                </a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 AZoom Car Rentals</div>
+    </footer>
+
+</body>
+
+</html>

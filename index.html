@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AZoom Car Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="homescript.js" defer></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html" class = "logo"><img  src="media/Azoom.png" alt="Azoom Car Rentals"></a>
+      <a href="index.html" class="button-header">Home</a>
+      <a href="cars.html" class="button-header">View our cars</a>
+      <a href="howtorent.html" class="button-header">How to rent</a>
+      <div id="loginbuttons">
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <div class="homebox">
+        <div class="intro">
+          <div class="homebox-text">
+            <h1>Welcome to Azoom Car Rental!</h1>
+            <p style="font-size: 20px;">
+              Looking for a reliable and affordable car rental service? Azoom Car Rental offers a wide selection 
+              of quality cars for every journey. We offer competitive prices, flexible booking options and 
+              excellent customer service, we make renting cars simple, convenient, and hassle-free. 
+            </p>
+          </div>
+          <div class="homebox-video">
+            <video width="400" controls autoplay muted>
+              <source src="media/promo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="homebox">
+        <div class="intro">
+          <div class="homebox-image slideshow" width="400">
+              <img id="img1" src="media/BMW.png" class="active" alt="Car">
+              <img id="img2" src="media/Sedan.png" alt="Car">
+          </div>
+          <div class="homebox-text">
+            <h1>Check out our fleet of cars!</h1>
+            <p style="font-size: 20px;">
+              Whether you're travelling for business, planning a family vacation or a weekend getaway, 
+              we have the perfect car for you. Browse our fleet to and make your reservation here.
+            </p>
+            <button onclick="window.location.href='cars.html';">Browse here</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class = "footerflex">
+      <div class="contactus">
+        <h3>Contact Us</h3>
+        <p>Email: contact_us@azoom.com</p>
+        <p>Mobile No.: +65 1234 5678</p>
+        <p>Address: 20 Jln Kilang, #02-00, Singapore 159418</p>
+        <p>Operating Hours: 9am - 7pm</p>
+      </div>    
+      <div class="social">
+        <h3>Follow us:</h3>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img class="footerIcons" src="media/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img class="footerIcons" src="media/instagram.png" alt="Instagram">
+          </a>           
+          <a href="https://www.youtube.com/" target="_blank">
+            <img class="footerIcons" src="media/youtube.png" alt="Youtube">
+          </a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 AZoom Car Rentals</div>
+  </footer>
+
+</body>
+</html>

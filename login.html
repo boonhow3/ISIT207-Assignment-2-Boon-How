@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="index.html" class = "logo"><img  src="media/Azoom.png" alt="Azoom Car Rentals"></a>
+        <a href="index.html" class="button-header">Home</a>
+        <a href="cars.html" class="button-header">View our cars</a>
+        <a href="howtorent.html" class="button-header">How to rent</a>
+        <a href="login.html" class="button-header">Login</a>
+        <a href="register.html" class="button-header">Register</a>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align:center;">Hello!</h1>
+        <form id="loginForm">
+            <table border="1" align="center" style="max-width:600px;width:100%;table-layout:fixed;">
+                <colgroup>
+                    <col style="width:25%" >
+                    <col style="width:75%">
+                </colgroup>
+                <tr>
+                    <th colspan="2">
+                        <h2>Login</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="width:30%;text-align:right;padding-right:20px;">Username:</td>
+                    <td><input type="text" id="name">
+                        <br><span id="nameError" style="color:red;"></span></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;padding-right:20px;">Password:</td>
+                    <td><input type="password" id="password">
+                        <br><span id="passwordError" style="color:red;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit">Login</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Don't have an account? <a href="register.html">Register here!</a></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+    </main>
+
+  <!-- Footer -->
+    <footer>
+        <div class = "footerflex">
+        <div id = "contactus" class="contactus">
+            <h3>Contact Us</h3>
+            <p>Email: contact_us@azoom.com</p>
+            <p>Mobile No.: +65 1234 5678</p>
+            <p>Address: 20 Jln Kilang, #02-00, Singapore 159418</p>
+            <p>Operating Hours: 9am - 7pm</p>
+        </div>    
+        <div class="social">
+            <h3>Follow us:</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="footerIcons" src="media/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footerIcons" src="media/instagram.png" alt="Instagram">
+            </a>           
+            <a href="https://www.youtube.com/" target="_blank">
+                <img class="footerIcons" src="media/youtube.png" alt="Youtube">
+            </a>
+        </div>
+        </div>
+        <div class="copyright">© 2025 AZoom Car Rentals</div>
+    </footer>
+
+</body>
+</html>

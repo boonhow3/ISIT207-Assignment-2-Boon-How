@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AZoom Car Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="reservescript.js" defer></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html" class = "logo"><img  src="media/Azoom.png" alt="Azoom Car Rentals"></a>
+      <a href="index.html" class="button-header">Home</a>
+      <a href="cars.html" class="button-header">View our cars</a>
+      <a href="howtorent.html" class="button-header">How to rent</a>
+      <div id="loginbuttons">
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <!-- Form here -->
+        <form id = "CarReserve" action="/submit" method="post">
+          <table border="1" align="center" style="max-width: 800px; width: 100%; table-layout: fixed; border: 1px solid black;">
+            <colgroup>
+              <col style="width:25%" >
+              <col style="width:75%">
+            </colgroup>
+            <th colspan = 2 >
+              <h2>Complete Your Reservation</h2>
+            </th>
+            <tbody>
+              <tr>
+                <td colspan="2" align="center" style="padding:0;">
+                  <h3 style="margin:0; padding:16px 0; text-decoration: underline;">Personal Particulars</h3>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name">
+                <br><span id="nameError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="text" id="email" name="email">
+                <br><span id="emailError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="text" id="phone" name="phone">
+                <br><span id="phoneError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding:0;">
+                  <h3 style="margin:0; padding:16px 0; text-decoration: underline;">Car Information</h3>
+                </td>
+              </tr>              
+              <tr>
+                <td><label for="car">Select Car:</label></td>
+                <td><select id="car" name="car">
+                    <option value="Sedan" selected>Sedan</option>
+                    <option value="BYD">BYD</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="BMW">BMW</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="datereserve">Reservation Date:</label></td>
+                <td><input type="date" id="datereserve" name="datereserve"></td>
+              </tr>
+              <tr>
+                <td><label for="datereturn">Return Date:</label></td>
+                <td><input type="date" id="datereturn" name="datereturn"></td>
+              </tr>
+              <tr>
+                <td><label for="timereserve">Reservation Time:</label></td>
+                <td><input type="time" id="timereserve" name="timereserve"></td>
+              </tr>
+              <tr>
+                <td><label for="timereturn">Return Time:</label></td>
+                <td><input type="time" id="timereturn" name="timereturn"></td>
+              </tr>
+              <tr>
+                <td><label for="locationreserve">Pick-up Location:</label></td>
+                <td><select id="locationreserve" name="locationreserve">
+                    <option value="sengkang" selected>Sengkang Carpark</option>
+                    <option value="punggol">Punggol Carpark</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="locationreturn">Return Location:</label></td>
+                <td><select id="locationreturn" name="locationreturn">
+                    <option value="sengkang">Sengkang Carpark</option>
+                    <option value="punggol" selected>Punggol Carpark</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="remarks">Remarks:</label></td>
+                <td><textarea id="remarks" name="remarks" placeholder="We value your feedback"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding:0;">
+                  <h3 style="margin:0; padding:16px 0; text-decoration: underline;">Payment Details</h3>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cardname">Name of Cardholder:</label></td>
+                <td><input type="text" id="cardname" name="cardname">
+                <br><span id="cardnameError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr>
+                <td><label for="cardnum">Card Number:</label></td>
+                <td><input type="text" id="cardnum" name="cardnum">
+                <br><span id="cardnumError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr>
+                <td><label for="cvv">CVV:</label></td>
+                <td><input type="text" id="cvv" name="cvv">
+                <br><span id="cvvError" style="color:red; font-size:0.9em;"></span></td>
+              </tr>
+              <tr align="center" >
+                <td colspan="2" align="center"><button type="submit">Reserve Car</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class = "footerflex">
+      <div class="contactus">
+        <h3>Contact Us</h3>
+        <p>Email: contact_us@azoom.com</p>
+        <p>Mobile No.: +65 1234 5678</p>
+        <p>Address: 20 Jln Kilang, #02-00, Singapore 159418</p>
+        <p>Operating Hours: 9am - 7pm</p>
+      </div>    
+      <div class="social">
+        <h3>Follow us:</h3>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img class="footerIcons" src="facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img class="footerIcons" src="instagram.png" alt="Instagram">
+          </a>           
+          <a href="https://www.youtube.com/" target="_blank">
+            <img class="footerIcons" src="youtube.png" alt="Youtube">
+          </a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 AZoom Car Rentals</div>
+  </footer>
+
+</body>
+</html>
