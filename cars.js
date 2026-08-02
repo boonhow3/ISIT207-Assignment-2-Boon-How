@@ -19,19 +19,9 @@ window.onload = function () {
 
     const cars = [
         {
-            name: "BMW",
-            price: 100,
-            image: "media/BMW.png"
-        },
-        {
             name: "Sedan",
             price: 60,
             image: "media/Sedan.png"
-        },
-        {
-            name: "Toyota",
-            price: 75,
-            image: "media/Toyota.png"
         },
         {
             name: "Honda",
@@ -39,15 +29,25 @@ window.onload = function () {
             image: "media/Honda.png"
         },
         {
-            name: "Tesla",
-            price: 85,
-            image: "media/Tesla.png"
+            name: "Toyota",
+            price: 75,
+            image: "media/Toyota.png"
         },
         {
             name: "BYD",
             price: 75,
             image: "media/BYD.png"
-        }
+        },
+        {
+            name: "Tesla",
+            price: 85,
+            image: "media/Tesla.png"
+        },
+        {
+            name: "BMW",
+            price: 100,
+            image: "media/BMW.png"
+        },
     ];
 
     const container = document.getElementById("carContainer");
